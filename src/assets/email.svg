@@ -3,17 +3,8 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="url(#grad1)"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 	   <linearGradient id="grad1" xx1="0" x2="0" y1="0" y2="1">
-      <stop offset="9%" style="stop-color:#70c06e;stop-opacity:1" />
-      <stop offset="18%" style="stop-color:#5fc192;stop-opacity:1" />
-      <stop offset="27%" style="stop-color:#34c4ec;stop-opacity:1" />
-      <stop offset="36%" style="stop-color:#31c4f3;stop-opacity:1" />
-      <stop offset="45%" style="stop-color:#8c2786;stop-opacity:1" />
-      <stop offset="54%" style="stop-color:#b22264;stop-opacity:1" />
-      <stop offset="63%" style="stop-color:#d61e45;stop-opacity:1" />
-      <stop offset="72%" style="stop-color:red;stop-opacity:1" />
-      <stop offset="81%" style="stop-color:#ff1700;stop-opacity:1" />
-      <stop offset="90%" style="stop-color:#ff7100;stop-opacity:1" />
-      <stop offset="99%" style="stop-color:#ff9500;stop-opacity:1" />
+     <stop offset="30%" style="stop-color:#06beb6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#48b1bf;stop-opacity:1" />
       
     </linearGradient>
 <g>

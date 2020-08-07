@@ -55,5 +55,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Karla`,
+            variants: [`100`, `300`, `700`],
+          },
+          {
+            family: `Lato`,
+            subsets: [`latin`],
+          },
+        ],
+      },
+    },
   ],
 };

@@ -8,14 +8,13 @@ import styled from "styled-components";
 
 import Image from "../components/lazy-images/image";
 import LogoSVG from "../assets/logo.svg";
-import Background from "../videos/background.mp4";
 
 const HomePageWrapper = styled.div`
   padding: 4.5rem 0 2rem 0;
 `;
 const HeaderTitle = styled.section`
-  border: solid red 1px;
-  height: 85vh;
+  height: 88vh;
+  background: linear-gradient(to left, #06beb6, #48b1bf);
   div {
     width: 85%;
     margin: 0 auto;
@@ -25,41 +24,26 @@ const HeaderTitle = styled.section`
     h1 {
       font-size: 2.5rem;
       color: #fff;
+      font-weight: 100;
+      text-align: left;
     }
   }
 `;
-const VideoWrapper = styled.div`
-  width: 100%;
-  height: 100vh;
-  z-index: -5;
-  position: absolute;
-  &:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: 0.2;
-    content: "";
-    z-index: 1;
-  }
-  video {
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-  }
-`;
+
 const MidSection = styled.section`
   div {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 3rem 0;
     text-align: center;
     span {
       svg {
         width: 35px;
       }
+    }
+    h2 {
+      line-height: 1.25;
+      padding: 1rem 0;
     }
   }
 `;
@@ -67,9 +51,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HomePageWrapper>
-      <VideoWrapper>
-        <video src={Background} type="video/mp4" loop muted autoPlay></video>
-      </VideoWrapper>
       <HeaderTitle>
         <div>
           <h1>Some great words to grab attention</h1>

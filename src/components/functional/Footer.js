@@ -16,6 +16,7 @@ const MainFooter = styled.footer`
   padding-top: 2.5rem;
   background: #fafafa;
   color: black;
+  box-shadow: 2px -0.5px 3px rgba(0, 18, 44, 0.15);
 `;
 const TopFooter = styled.div``;
 const SocialLinks = styled.div`
@@ -58,7 +59,7 @@ const QuickLink = styled.div`
 `;
 const FooterLogo = styled.div`
   line-height: 1;
-  width: 46%;
+  width: 48%;
   margin: 2.5rem auto;
   h1 {
   }

@@ -183,7 +183,7 @@ const MobileNav = styled.div`
         font-size: 1.5rem;
         font-weight: 200;
         margin-bottom: 1.5rem;
-        font-family: "Rubik-Regular", sans-serif;
+        font-family: ${(props) => props.theme.Titlefont};
 
         transition: all 0.1s ease;
         animation: ${({ open }) => (open ? "otherAnimationIn" : "")} 0.6s linear
@@ -200,7 +200,7 @@ const MobileNav = styled.div`
           opacity: 0;
           margin-bottom: 1.25rem;
           p {
-            font-family: "Rubik-Light", sans-serif;
+            font-family: ${(props) => props.theme.Titlefont};
             font-weight: 100;
           }
           animation: ${({ open }) => (open ? "menuItemOut" : "")} 0.6s linear 2s

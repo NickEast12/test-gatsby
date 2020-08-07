@@ -13,7 +13,7 @@ const theme = {
   altBksg: "#142338",
   mainColour: "#19BABA",
   secondaryColour: "#6a6a6a",
-  titleFont: "Cabin",
+  titleFont: "Karla",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-size: 1.25rem;
-      font-family: "Proxima Nova";
+      font-family: "Karla";
       line-height: 1.5;
       background: ${theme.bkg};
       color: ${theme.reset}
