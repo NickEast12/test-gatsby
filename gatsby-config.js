@@ -56,16 +56,24 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ["Karla"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
             family: `Karla`,
-            variants: [`100`, `300`, `700`],
+            variants: [`100`, `200`, `400`, `700`],
           },
           {
-            family: `Lato`,
-            subsets: [`latin`],
+            family: `Source Sans Pro`,
+            variants: [`100`, `200`, `300`, `400`, `500`],
           },
         ],
       },

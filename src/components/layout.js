@@ -14,6 +14,7 @@ const theme = {
   mainColour: "#19BABA",
   secondaryColour: "#6a6a6a",
   titleFont: "Karla",
+  pFont: "Source Sans Pro",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -22,6 +23,11 @@ const GlobalStyle = createGlobalStyle`
       box-sizing: inherit;
       margin: 0px;
       padding: 0px;
+      -webkit-font-smoothing: antialiased;
+
+    }
+    p {
+      font-family: ${(props) => props.theme.pFont}
     }
     body {
       margin: 0;

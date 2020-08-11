@@ -38,6 +38,7 @@ const SocialLinks = styled.div`
       font-weight: 200;
       font-size: 1.05rem;
       margin-left: 0.5rem;
+      font-family: ${(props) => props.theme.titleFont};
     }
   }
 `;
