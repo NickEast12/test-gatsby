@@ -205,9 +205,9 @@ const MobileNav = styled.div`
           }
           animation: ${({ open }) => (open ? "menuItemOut" : "")} 0.6s linear 2s
             1 forwards;
-          position: absolute;
+          position: static;
           visibility: hidden;
-          /* &:nth-child(1) {
+          &:nth-child(1) {
             animation-delay: 0.1s;
           }
           &:nth-child(2) {
@@ -221,7 +221,7 @@ const MobileNav = styled.div`
           }
           &:nth-child(5) {
             animation-delay: 0.85s;
-          } */
+          }
           p {
             line-height: 1.2;
             font-size: 1.75rem;
