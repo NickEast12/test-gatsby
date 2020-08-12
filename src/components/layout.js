@@ -29,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
     p {
       font-family: ${(props) => props.theme.pFont}
     }
+    a:-webkit-any-link {
+      text-decoration: none;
+      color: inherit;
+    }
     body {
       margin: 0;
       padding: 0;

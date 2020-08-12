@@ -6,19 +6,22 @@ import SEO from "../components/seo";
 
 import styled from "styled-components";
 
-import Image from "../components/lazy-images/image";
+import VSCover from "../components/lazy-images/vs-cover";
+import Portfolio from "../components/lazy-images/Portfolio";
 import LogoSVG from "../assets/logo.svg";
 import Design from "../assets/design.svg";
 import Develop from "../assets/develop.svg";
 import Promote from "../assets/promote.svg";
 import Support from "../assets/support.svg";
 
+import Placeholder from "../images/vs-cover.jpg";
+
 const HomePageWrapper = styled.div`
   padding: 4.5rem 0 2rem 0;
 `;
 const HeaderTitle = styled.section`
   height: 88vh;
-  background: linear-gradient(to left, #06beb6, #48b1bf);
+  background: white;
   div {
     width: 85%;
     margin: 0 auto;
@@ -27,7 +30,7 @@ const HeaderTitle = styled.section`
     font-family: ${(props) => props.theme.titleFont};
     h1 {
       font-size: 2.5rem;
-      color: #fff;
+      color: #000;
       font-weight: 100;
       text-align: left;
     }
@@ -86,6 +89,113 @@ const IconSection = styled.section`
     }
   }
 `;
+
+const ProjectSection = styled.section`
+  padding: 3rem 0;
+  .projects {
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    &__more {
+      background: #f0f3f7;
+      padding: 4rem 0;
+      a {
+        background-image: linear-gradient(
+          to right,
+          rgba(6, 190, 182, 0.5),
+          rgba(72, 177, 191, 0.5)
+        );
+        background-position: 0 90%;
+        background-repeat: repeat-x;
+        background-size: 30% 30%;
+        border-bottom: 0;
+        color: inherit;
+      }
+    }
+    &__boxes {
+      padding: 5rem 0;
+      width: 100%;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      z-index: 5;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: -2;
+        content: "";
+        opacity: 0.35;
+      }
+      h2 {
+        font-weight: 600;
+      }
+      &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+        div {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+`;
+
+const BlogSection = styled.section`
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  text-align: center;
+  h3 {
+    padding-bottom: 3rem;
+  }
+  .blog__home {
+    width: 80%;
+    margin: 0 auto;
+    &__box {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      &__img {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 9rem;
+        }
+      }
+      h4 {
+        text-align: left;
+        font-weight: 200;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  .blog__btn {
+    width: 60%;
+    margin: 2rem auto 1.5rem auto;
+    button {
+      width: 100%;
+      background: ${(props) => props.theme.mainColour};
+      border: solid 1px ${(props) => props.theme.mainColour};
+      border-radius: 2.5px;
+      padding: 0.65rem 0;
+      color: #fff;
+      font-weight: 600;
+      font-family: "Karla";
+    }
+  }
+`;
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -127,6 +237,53 @@ const IndexPage = () => (
           </div>
         </div>
       </IconSection>
+      <ProjectSection>
+        <div className="projects">
+          <div className="projects__boxes">
+            <div className="projects__boxes__img">
+              <VSCover />
+            </div>
+            <h2>Vine Street</h2>
+            <p>Website &amp; Logo Redesign</p>
+          </div>
+          <div className="projects__boxes">
+            <div className="projects__boxes__img">
+              <Portfolio />
+            </div>
+            <h2>Nick East Web Development</h2>
+            <p>Website Redesign</p>
+          </div>
+          <div className="projects__more">
+            <Link to="/">See more work!</Link>
+          </div>
+        </div>
+      </ProjectSection>
+      <BlogSection>
+        <h3>Latest from our blog</h3>
+        <div className="blog__home">
+          <div className="blog__home__box">
+            <div className="blog__home__box__img">
+              <img src={Placeholder} alt="Placeholder" />
+            </div>
+            <h4>A blog title that is relavant to today society.</h4>
+          </div>
+          <div className="blog__home__box">
+            <div className="blog__home__box__img">
+              <img src={Placeholder} alt="Placeholder" />
+            </div>
+            <h4>A blog title that is relavant to today society.</h4>
+          </div>
+          <div className="blog__home__box">
+            <div className="blog__home__box__img">
+              <img src={Placeholder} alt="Placeholder" />
+            </div>
+            <h4>A blog title that is relavant to today society.</h4>
+          </div>
+        </div>
+        <div className="blog__btn">
+          <button>Visit Our Blog</button>
+        </div>
+      </BlogSection>
     </HomePageWrapper>
   </Layout>
 );
