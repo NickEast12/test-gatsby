@@ -124,7 +124,6 @@ const MobileNav = styled.div`
       visibility: visible;
       transform: translateY(0);
       opacity: 1;
-      position: static;
     }
     1% {
       position: static;
@@ -204,7 +203,8 @@ const MobileNav = styled.div`
             font-family: ${(props) => props.theme.Titlefont};
             font-weight: 100;
           }
-          animation: ${({ open }) => (open ? "menuItemOut" : "")} 0.6s linear 2s
+          /* animation: ${({ open }) =>
+            open ? "menuItemOut" : ""} 0.6s linear 2s
             alternate 1 forwards running;
           position: absolute;
           visibility: hidden;
@@ -222,7 +222,7 @@ const MobileNav = styled.div`
           }
           &:nth-child(5) {
             animation-delay: 0.85s;
-          }
+          } */
           p {
             line-height: 1.2;
             font-size: 1.75rem;
