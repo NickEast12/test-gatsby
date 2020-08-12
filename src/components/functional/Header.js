@@ -203,12 +203,11 @@ const MobileNav = styled.div`
             font-family: ${(props) => props.theme.Titlefont};
             font-weight: 100;
           }
-          /* animation: ${({ open }) =>
-            open ? "menuItemOut" : ""} 0.6s linear 2s
-            alternate 1 forwards running;
+          animation: ${({ open }) => (open ? "menuItemOut" : "")} 0.6s linear 2s
+            1 forwards;
           position: absolute;
           visibility: hidden;
-          &:nth-child(1) {
+          /* &:nth-child(1) {
             animation-delay: 0.1s;
           }
           &:nth-child(2) {
