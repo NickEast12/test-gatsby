@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 import styled from "styled-components";
 
 import VSCover from "../components/lazy-images/vs-cover";
-import Portfolio from "../components/lazy-images/Portfolio";
+import Portfolio from "../components/lazy-images/portfolio";
 import LogoSVG from "../assets/logo.svg";
 import Design from "../assets/design.svg";
 import Develop from "../assets/develop.svg";
