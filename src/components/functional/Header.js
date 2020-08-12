@@ -124,6 +124,7 @@ const MobileNav = styled.div`
       visibility: visible;
       transform: translateY(0);
       opacity: 1;
+      position: static;
     }
     1% {
       position: static;
@@ -245,7 +246,6 @@ const MobileNav = styled.div`
         border: solid 1.5px ${(props) => props.theme.mainColour};
         opacity: 0;
         letter-spacing: 1px;
-        font-family: "Rubik-Regular";
         border-radius: 2.5px;
         margin-top: 1.25rem;
         color: white;
